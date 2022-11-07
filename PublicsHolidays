@@ -1,0 +1,38 @@
+import java.util.HashMap;
+import java.util.ArrayList;
+
+public class Main {
+public static void main(String[] arg) {
+    HashMap<String, ArrayList<Integer>> stateHolidays = new HashMap<>(); //создали хеш-таблицу;
+    
+    ArrayList<Integer> january = new ArrayList<>(); //создаём список дней Января
+    january.add(1); // добавили в список день месяца
+    january.add(7); // добавили в список день месяца
+    stateHolidays.put("Январь ", january); // добавили месяц и список в хеш-таблицу
+    
+    ArrayList<Integer> february = new ArrayList<>();
+    february.add(23); // добавили в список день месяца
+    stateHolidays.put("Февраль", february);
+    
+    ArrayList<Integer> march = new ArrayList<>();
+    march.add(8); // добавили в список день месяца
+    stateHolidays.put("Март", march);
+        
+    ArrayList<Integer> may = new ArrayList<>();
+    may.add(1); // добавили в список день месяца
+    may.add(9); // добавили в список день месяца
+    stateHolidays.put("Май", may);
+    
+    ArrayList<Integer> june = new ArrayList<>();
+    june.add(12); // добавили в список день месяца
+    stateHolidays.put("Июнь", june);
+        
+    ArrayList<Integer> november = new ArrayList<>();
+    november.add(4); // добавили в список день месяца
+    stateHolidays.put("Ноябрь", november);
+    System.out.println(stateHolidays);
+
+    for (String inventory : stateHolidays.keySet()) 
+      System.out.println(inventory);
+}
+}
